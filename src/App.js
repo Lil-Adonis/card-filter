@@ -10,7 +10,7 @@ const App = () => {
 
   useEffect(() => {
     if (!filterQuery) {
-      setContactList(data?.results?.slice(0, 10))
+      setContactList(data?.results?.slice(0, 50))
     } else {
       const queryString = filterQuery.toLowerCase()
       const filteredData = data?.results?.filter(contact => {
